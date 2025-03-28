@@ -7,12 +7,9 @@
 </head>
 <body>
   <script>
-    // Получаем текущий URL
     const currentUrl = window.location.href;
 
-    // Проверяем, находится ли пользователь на старом пути
     if (currentUrl.includes('/game/')) {
-        // Заменяем /game/ на /universe/ и перенаправляем
         const newUrl = currentUrl.replace('/game/', '/universe/');
         window.location.href = newUrl;
     }
